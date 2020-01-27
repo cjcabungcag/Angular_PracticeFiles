@@ -1,0 +1,39 @@
+<body>
+<br><br><br>
+<form class="form">
+  <fieldset>
+    <legend>Student Enrollment:</legend>
+    Name:<br />
+    <input type="text" [(ngModel)]="name" name="name" /><br /><br />
+    Gender:<br />
+    <select [(ngModel)]="gender" name="gender">
+      <option value="Female">Female</option>
+      <option value="Male">Male</option>
+    </select>
+    <br /><br />
+    Address:<br />
+    <input type="text" [(ngModel)]="address" name="address" /><br /><br />
+
+    Enrolled: <br />
+    <input type="checkbox" [(ngModel)]="contact" name="contact" /><br /><br />
+
+    <input class="btnSubmit" type="button" (click)="enroll()" value="Submit" />
+
+    <p *ngIf="cdata">Notification: {{ cdata }}</p>
+<hr>
+    <h1>List of Declined</h1>
+    <ol>
+      <li *ngFor="let item of declinedList">
+        Name:{{ item.name }} Gender:{{ item.gender }} Address:{{item.address}}
+        Enrolled:{{ item.contact }}
+      </li>
+    </ol>
+  </fieldset>
+</form>
+
+<app-enroll2
+  (childEvent)="cdata = $event"
+  (childEvent1)="declinedList = $event"
+  [data]="data"
+></app-enroll2>
+</body>

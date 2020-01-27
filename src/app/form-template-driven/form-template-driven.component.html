@@ -1,0 +1,61 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<body>
+  <div class="w3-container">
+    <div class="w3-panel w3-card-4" id="templateSection" *ngIf="!hide" >
+      <h1 class="temp">Template Driven Form</h1><hr>
+      <form (ngSubmit)="onSubmit()" #sampleForm="ngForm">
+        Name:
+        <input class="w3-input" name="name" [(ngModel)]="fullname" type="text" required minlength="4"
+          placeholder="ex. Chilla Jean Cabungcag" #name="ngModel" />
+           <div *ngIf="name.invalid && (name.dirty || name.touched)">
+                <div *ngIf="name.errors.required" class="err" >
+                    * Name is required!
+                </div>
+                <div *ngIf="name.errors.minlength" class="err">
+                    * Name must be at least 4 characters long!
+                </div>
+            </div><br>
+        Email: 
+        <input class="w3-input" name="email" [(ngModel)]="emailAdd" type="email" 
+        placeholder="cj@gmail.com" #emailadd="ngModel"
+        email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+
+         <div *ngIf="emailadd.invalid && (emailadd.dirty || emailadd.touched)">
+              <div *ngIf="emailadd.errors.required" class="err" >
+                  * Email is required!
+              </div>
+              <div *ngIf="emailadd.errors.pattern" class="err">
+                  * Please enter a valid email address!
+              </div>
+          </div><br>
+
+        Gender:
+            <select [(ngModel)]="gender" class="w3-input"  name="Gender" #Gender="ngModel" required>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+
+            <div *ngIf="Gender.invalid && (Gender.dirty || Gender.touched)">
+              <div *ngIf="Gender.errors.required" class="err" >
+                  * Gender is required!
+              </div>
+          </div><br>
+
+
+        <button  [disabled]="!sampleForm.form.valid" class="w3-btn w3-blue">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div >
+    <div class="w3-panel w3-card-4" id="template2Section" *ngIf="hide" >
+        <h3>Data Submitted</h3><hr>
+        Name: {{newfullname}}<br>
+        Email: {{newemailAdd}}<br>
+        Gender: {{newgender}}<br><br>
+
+        <button (click)="hide= false" class="w3-btn w3-blue">EDIT</button>
+    </div>
+  </div>
+</body>

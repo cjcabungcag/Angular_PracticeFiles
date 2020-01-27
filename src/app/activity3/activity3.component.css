@@ -1,0 +1,30 @@
+.newClass{
+    text-align: center;  
+    font-style: sans-serif;
+    
+}
+
+body{
+    background-color: cadetblue;
+    padding: 5%;
+}
+
+.btnFun{
+    background-color: bisque;
+    padding: 10px;
+}
+.imgClass{
+    margin-top: 5%;
+    padding: 20px;
+   
+}
+
+.img1{
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+}
+.binding{
+    font-size: 25px;
+    color: blue;
+}

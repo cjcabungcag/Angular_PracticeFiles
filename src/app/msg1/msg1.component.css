@@ -1,0 +1,23 @@
+.msg{
+    border: 2px solid;
+    padding:4%;
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 8%;
+    text-align: center;
+    font-size: 20px;
+    background-color: aqua;
+}
+.h1{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 50px;
+    color:white;    
+}
+
+body{
+    background-image: url("https://images.wallpaperscraft.com/image/background_texture_spot_light_47030_1280x720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:5%;
+}

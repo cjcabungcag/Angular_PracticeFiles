@@ -1,0 +1,21 @@
+#dataSection{
+    padding: 5%;
+    background-image: url("https://images.wallpaperscraft.com/image/cup_ocean_sand_133354_1280x720.jpg")
+
+}
+.w3-container{
+    width:50%;
+    padding:10px;
+    margin-left: 25%;
+}
+
+.dataDiv{
+    background-color: rgb(96, 192, 176);
+    width: 90%;
+    margin-left: 5%;
+    padding: 2%;
+    margin-bottom: 4%;
+}
+h1{
+    text-align: center;
+}

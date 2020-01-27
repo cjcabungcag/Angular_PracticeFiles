@@ -1,0 +1,30 @@
+#templateSection{
+    padding:50px;
+}
+#template2Section{
+    padding:50px;
+    text-align:center;
+    width: 40%;
+    margin-left:25%;
+}
+
+.w3-container{
+    margin-top: 5%;
+    width:50%;
+    margin-left:25%;
+}
+.err{
+    color:red;
+    font-size:12px;
+}
+
+.temp{
+    text-align: center;
+}
+
+body{
+    background-image: url("https://images.wallpaperscraft.com/image/cup_ocean_sand_133354_1280x720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:5%;
+}

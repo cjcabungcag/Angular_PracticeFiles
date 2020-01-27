@@ -1,0 +1,13 @@
+<body>
+<div class="newClass">
+    <img class="pic2" [src]="img2">
+    <button class="btnFun" (click)="clicked()">It's more fun in the Philippines!!!</button>
+
+    <div class="imgClass"[style.background]="isActive? 'skyblue': 'gray'" >
+        <img class="img1" src="{{ imgFileName }}">
+    </div><br>
+
+    <button [disabled] = "isDisabled">{{place}}</button>
+    <p [class.binding]="isActive">Visit Now!</p>
+</div>
+</body>

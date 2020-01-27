@@ -1,0 +1,14 @@
+<body>
+        <h1 class="h1">iCHAT</h1>
+
+        <div class="msg">
+                <h1 class="header">Chilla</h1>
+                <input type="text" [(ngModel)]= "message" ><button (click)="sendMessage()">Send</button>
+                
+                <p><strong>Message from Jean:</strong> {{ cdata}}</p>
+        
+        </div>
+
+        <app-msg2 (childEvent)= "cdata=$event" [parentData]= "pdata"></app-msg2>
+        <br>
+</body>

@@ -1,0 +1,19 @@
+<div class="child">
+  <fieldset>
+    <p>Name: {{ data.name }}</p>
+    <p>Gender: {{ data.gender }}</p>
+    <p>Address: {{ data.address }}</p>
+    <p>Enrolled: {{ data.contact }}</p>
+
+    <input class="btnApp" type="button" (click)="approve()" value="Approve" />
+    <input class="btnDec" type="button" (click)="decline()" value="Decline" />
+<hr>
+    <h1>List of Approved</h1>
+    <ol>
+      <li *ngFor="let item of approvedList">
+        Name:{{ item.name }} Gender:{{ item.gender }} Address:{{item.address}}
+        Enrolled:{{ item.contact }}
+      </li>
+    </ol>
+  </fieldset>
+</div>

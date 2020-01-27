@@ -1,0 +1,22 @@
+.child{
+    width:30%;
+    padding:50px;
+    float:right;
+    font-size: 20px;
+    margin-top:-600px;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.btnApp{
+    background-color: burlywood;
+    padding: 8px;
+    font-size: 18px;
+}
+
+
+.btnDec{
+    background-color: burlywood;
+    padding: 8px;
+    font-size: 18px;
+}

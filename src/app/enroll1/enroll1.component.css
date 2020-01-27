@@ -1,0 +1,19 @@
+body{
+    background-image: url("https://image.freepik.com/free-photo/bottle-champagne-with-glitter-blue-background_23-2148356098.jpg");
+background-size: 100%;
+}
+.form{
+    width:30%;
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+input{
+font-size: 20px;
+}
+
+.btnSubmit{
+    background-color: burlywood;
+    padding: 8px;
+    font-size: 18px;
+}

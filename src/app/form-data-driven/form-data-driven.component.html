@@ -1,0 +1,52 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+<div class="w3-container">
+  <div class="w3-panel w3-card-4" id="dataSection" >
+    <h1>Data Driven Form</h1>
+    <hr>
+    <form (ngSubmit)="onSubmit()" [formGroup]="profileForm" >
+       
+      <label>
+        First Name:<br>
+        <input class="w3-input" type="text" formControlName="firstName" required />
+      </label><br>
+
+      <label>
+        Last Name:<br>
+        <input class="w3-input" type="text" formControlName="lastName" required/>
+      </label><br>
+
+      <label>
+        Email:<br>
+        <input class="w3-input" type="text" formControlName="emailAdd" required email/>
+      </label><br>
+
+      <label>
+        Street:
+        <input class="w3-input" type="text" formControlName="street" required/>
+      </label><br>
+
+      <label>
+        City:
+        <input class="w3-input" type="text" formControlName="city" required/>
+      </label><br>
+
+      <label>
+        State:
+        <input class="w3-input" type="text" formControlName="state" required/>
+      </label><br>
+
+      <label>
+        Zip Code:
+        <input class="w3-input" type="text" formControlName="zip" required/>
+      </label><br>
+      <br />
+      <button [disabled]="!profileForm.valid" class="w3-btn w3-blue">Submit</button><br><br>
+    </form>
+  </div>
+</div>
+<div class="dataDiv">
+  <h3>Data Submitted:</h3>
+  <p  class="data"> {{ data }} </p>
+</div>
